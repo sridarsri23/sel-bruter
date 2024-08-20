@@ -19,7 +19,6 @@ Python Packages
 
 You can install the necessary Python packages using pip:
 
-bash
 
 pip install selenium
 
@@ -32,28 +31,24 @@ Additional Tools
 Setup
 
     Clone the Repository:
-
-    bash
-
-git clone https://github.com/yourusername/your-repo.git
-cd your-repo
+    git clone https://github.com/sridarsri23/sel-bruter    
+    cd your-repo
 
 Edit the Script:
 
     Modify the gecko_driver_path and firefox_path variables if your paths differ.
     Update the login_url to point to the target login page.
-    Replace the usernames and password file path /home/blackbike/PT/combined_wordlist_temp.txt with your own.
+    Replace the 'usernames' and password file path /home/wordlist_temp.txt with your own.
 
 Prepare the Environment:
 
-    Ensure Tor is running: sudo service tor start
+    Ensure Tor is running: 
+    sudo service tor start
     Verify that the Tor SOCKS5 proxy is correctly configured to run on 127.0.0.1:9050.
 
 Running the Script:
 
 Execute the script with Python:
-
-bash
 
     python3 Sel-Bruter.py
 
